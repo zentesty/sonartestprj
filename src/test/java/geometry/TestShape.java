@@ -15,14 +15,14 @@ public class TestShape {
         tmp = pCircle.CalculateArea();
         System.out.println("AREA of circle = " + tmp);
 
-//        ((Square) pSquare).side = 22.2;
-//        tmp = pSquare.CalculateArea();
-//        System.out.println("AREA of square = " + tmp);
+        ((Square) pSquare).side = 22.2;
+        tmp = pSquare.CalculateArea();
+        System.out.println("AREA of square = " + tmp);
 
-//        ((Triangle) pTriangle).setBase(10.3);
-//        ((Triangle) pTriangle).setHeight(4.6);
-//        tmp = pTriangle.CalculateArea();
-//        System.out.println("AREA of triangle = " + tmp);
+        ((Triangle) pTriangle).setBase(10.3);
+        ((Triangle) pTriangle).setHeight(4.6);
+        tmp = pTriangle.CalculateArea();
+        System.out.println("AREA of triangle = " + tmp);
     }
 
     @Test()
@@ -36,28 +36,27 @@ public class TestShape {
         System.out.println("AREA of circle = " + tmp);
     }
 
-//    @Test()
-//    public void GetSquareArea(){
-//        Shape pSquare = new Square();
-//
-//        double tmp;
-//
-//        ((Square) pSquare).side = 22.2;
-//        tmp = pSquare.CalculateArea();
-//        System.out.println("AREA of square = " + tmp);
-//    }
+    @Test()
+    public void GetSquareArea(){
+        Shape pSquare = new Square();
 
-//    @Test()
-//    public void GetTriangleArea(){
-//        Shape pTriangle = new Triangle();
-//
-//        double tmp;
-//
-//        ((Triangle) pTriangle).setBase(10.3);
-//        ((Triangle) pTriangle).setHeight(4.6);
-//        tmp = pTriangle.CalculateArea();
-//        System.out.println("AREA of triangle = " + tmp);
-//    }
+        double tmp;
 
+        ((Square) pSquare).side = 22.2;
+        tmp = pSquare.CalculateArea();
+        System.out.println("AREA of square = " + tmp);
+    }
+
+    @Test()
+    public void GetTriangleArea(){
+        Shape pTriangle = new Triangle();
+
+        double tmp;
+
+        ((Triangle) pTriangle).setBase(10.3);
+        ((Triangle) pTriangle).setHeight(4.6);
+        tmp = pTriangle.CalculateArea();
+        System.out.println("AREA of triangle = " + tmp);
+    }
 
 }
